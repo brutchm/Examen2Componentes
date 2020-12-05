@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:th="http://www.thymeleaf.org " xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>MODIFICAR CATEGORIAS</title>
+</head>
+<body>
+
+<h2>MODIFICAR CATEGORIAS/h2>
+
+<form action="#" th:action="@{/cambioCategoria/{id}(id=${id})}" th:object="${categoria}" method="post">
+    <label for="nombre">Nombre</label>
+    <input type="text" th:field="*{nombre}" id="nombre">
+
+
+
+    <input type="submit" value="Agregar categoria">
+</form>
+</body>
+</html>

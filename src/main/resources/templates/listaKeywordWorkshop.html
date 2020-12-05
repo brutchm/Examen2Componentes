@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>LISTAR KEYWORDS</title>
+</head>
+<body>
+<div>
+
+    <ul>
+        <div th:each="entry : ${keywordWorkshop}">
+            <li>
+
+                <span><bold>Nombre: </bold></span><span th:text="${entry.nombre}">Nombre</span><br/>
+                <span><bold>Keyword:</bold> </span><span th:text="${entry.keyword}">Keyword</span><br/>
+
+
+            </li>
+        </div>
+
+    </ul>
+</div>
+</body>
+</html>
